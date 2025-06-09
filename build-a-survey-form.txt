@@ -1,0 +1,85 @@
+** start of index.html **
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Survey Form</title>
+  </head>
+
+  <body> 
+    <h1 id="title">Survey Form</h1>
+    <p id="description">We'd love to hear about your experience with our product. Please answer the following questions honestly.</p>
+    
+    <form id="survey-form">
+      <!-- Name Field -->
+      <label for="name">Name:</label><br>
+      <input type="text" id="name" name="name" required placeholder="Enter your name">
+      <label id="name-label">Please enter your full name.</label>
+      <br><br>
+
+      <!-- Email Field -->
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="email" required placeholder="Enter your email">
+      <label id="email-label">Please enter a valid email address.</label>
+      <br><br>
+
+      <!-- Age Field -->
+      <label for="number">Age:</label><br>
+      <input type="number" id="number" name="number" min="0" max="100" placeholder="Enter your age">
+      <label id="number-label">Please enter your age between 0 and 100.</label>
+      <br><br>
+
+      <!-- Checkbox Fields -->
+      <p>Which features did you use? (Select all that apply)</p>
+
+      <label>
+        <input type="checkbox" name="features" value="feature1">
+        Feature One
+      </label>
+      <br>
+
+      <label>
+        <input type="checkbox" name="features" value="feature2">
+        Feature Two
+      </label>
+      <br><br>
+
+      <!-- Radio Buttons -->
+      <p>Would you recommend our product?</p>
+      <label>
+        <input type="radio" name="recommend" value="yes" checked>
+        Yes
+      </label>
+      <br>
+      <label>
+        <input type="radio" name="recommend" value="no">
+        No
+      </label>
+      <br>
+      <label>
+        <input type="radio" name="recommend" value="maybe">
+        Maybe
+      </label>
+      <br><br>
+<textarea></textarea>
+<button id="submit"></button>
+      <!-- Dropdown Field -->
+      <label for="dropdown">How did you hear about us?</label><br>
+      <select id="dropdown" name="dropdown">
+        <option value="">--Please choose an option--</option>
+        <option value="social-media">Social Media</option>
+        <option value="friend">Friend</option>
+        <option value="advertisement">Advertisement</option>
+        <option value="other">Other</option>
+      </select>
+      <br><br>
+
+      <!-- Submit Button -->
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>
+
+** end of index.html **
+

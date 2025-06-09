@@ -1,0 +1,45 @@
+** start of index.html **
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Video Compilation Page</title>
+</head>
+
+<body>
+<main>
+    <h1>Best Biryani Recipes</h1>
+    <p>
+        Welcome to your go-to spot for delicious biryani recipes! From classic Hyderabadi to quick and easy home-style versions, we’ve got flavorful options for every taste. Follow our simple steps to cook biryani that's rich in spices, aroma, and tradition — perfect for any occasion.
+    </p>
+
+    <section>
+        <h2>Hyderabadi Biryani</h2>
+        <p>Watch this video about Hyderabadi Biryani</p>
+        <iframe src="https://youtu.be/mRNe05EADi0?si=swlNZN6MYsHiONdm" title="best way to cook a Hyderabadi Biryani" height="200" width="200"></iframe>
+    </section>
+
+    <section>
+        <h2>Home-Style Chicken Biryani</h2>
+       <p>Watch this video about Home-Style Chicken Biryani</p>
+        <iframe src="https://youtu.be/95BCU1n268w?si=0q0JKhDy6Qpx005U" title="Best way to cook Home Style Chicken" height="200" width="200"></iframe>
+
+    </section>
+
+    <section>
+        <h2>Mutton Biryani</h2>
+        <p>Watch this video about Mutton Biryani</p>
+     <iframe src="https://youtu.be/E49fvjd6vtg?si=n61B2z1JeOm7l8Qh" title="Best way to cook Mutton-Biryani" height="200" width="200"></iframe>
+
+    </section>
+
+</main>
+</body>
+
+</html>
+
+
+** end of index.html **
+

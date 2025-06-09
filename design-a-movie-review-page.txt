@@ -1,0 +1,34 @@
+** start of index.html **
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Review</title>
+</head>
+<body>
+    <main>
+        <h1>The Message</h1>
+
+        <img src="https://imgs.search.brave.com/aqk6iFT6MsyL0IR2fFnqUzRGSJ1DXEQnJ9THP9gfWW8/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9ucHIu/YnJpZ2h0c3BvdGNk/bi5jb20vZGltczQv/ZGVmYXVsdC9lN2Fk/MWNkLzIxNDc0ODM2/NDcvc3RyaXAvdHJ1/ZS9jcm9wLzk1OXgx/NDQwKzArMC9yZXNp/emUvODgweDEzMjEh/L3F1YWxpdHkvOTAv/P3VybD1odHRwczov/L21lZGlhLm5wci5v/cmcvYXNzZXRzL2lt/Zy8yMDE2LzA3LzA4/L3A0NzIwOV9kX3Y4/X2FhX2N1c3RvbS1h/ZmI5NDc2NTMyZjY4/YmU2MWZjOGEyMDhm/MmY5YWQ3MWFhYzZh/NGY1LmpwZw"  
+             alt="Scene from The Message (1976), an epic Islamic film depicting the life and message of the Prophet Muhammad through historical events in early Islam" 
+             width="300">
+
+        <p><strong>The Message</strong> (1976) is a historical epic film directed by Moustapha Akkad. It tells the story of Islam and the life of the Prophet Muhammad (peace be upon him), portrayed through the experiences of his followers and the events that shaped the early Muslim community. The film emphasizes the moral and spiritual foundations of Islam while respecting Islamic traditions by not visually depicting the Prophet himself.</p>
+
+        <p><strong>Movie Rating:</strong><span aria-hidden="true">⭐⭐⭐⭐⭐⭐⭐⭐☆☆</span>(8.2/10)</p>
+        <h2>Cast Members</h2>
+        <ul>
+            <li><strong>Anthony Quinn</strong> as Hamza ibn Abdul-Muttalib</li>
+            <li><strong>Johnny Sekka</strong> as Bilal ibn Rabah</li>
+            <li><strong>Michael Forest</strong> as Khalid ibn al-Walid</li>
+            <li><strong>Garrick Hagon</strong> as Ammar ibn Yasir</li>
+            <li><strong>Michael Ansara</strong> as Abu Sufyan</li>
+        </ul>
+    </main>
+</body>
+</html>
+
+** end of index.html **
+
