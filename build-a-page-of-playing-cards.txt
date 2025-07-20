@@ -1,0 +1,73 @@
+** start of index.html **
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Playing Cards</title>
+  <style>
+    .card {
+      width: 100px;
+      height: 150px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .left {
+      align-self: flex-start;
+    }
+
+    .middle {
+      display: flex;           /* ✅ Important fix */
+      flex-direction: column;  /* ✅ Required */
+      align-self: center;
+    }
+
+    .right {
+      align-self: flex-end;
+    }
+
+    #playing-cards {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <main id="playing-cards">
+    <div class="card">
+      <div class="left"></div>
+      <div class="middle"></div>
+      <div class="right"></div>
+    </div>
+
+    <div class="card">
+      <div class="left"></div>
+      <div class="middle"></div>
+      <div class="right"></div>
+    </div>
+
+    <div class="card">
+      <div class="left"></div>
+      <div class="middle"></div>
+      <div class="right"></div>
+    </div>
+  </main>
+</body>
+
+</html>
+
+
+** end of index.html **
+
+** start of styles.css **
+
+
+
+** end of styles.css **
+

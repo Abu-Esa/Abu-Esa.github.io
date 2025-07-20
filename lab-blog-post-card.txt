@@ -1,0 +1,78 @@
+** start of index.html **
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Post Card</title>
+    <style>
+        .blog-post-card {
+            border-radius: 80px; 
+            overflow: hidden; 
+            background-color: white;
+            text-align: center;
+            width: 1000px; 
+        }
+
+        .post-img {
+            width: 100%; /* ✅ Fills the card's width */
+            height: auto;
+            border-bottom: 2px solid #ccc; /* ✅ Has a border-bottom */
+        }
+
+        .post-content {
+            padding: 20px; 
+        }
+
+        .post-title {
+            margin: 15px 0; /* ✅ Custom margin */
+            color: #2c3e50; /* ✅ Non-default color */
+        }
+
+        .post-excerpt {
+            margin: 10px 0; /* ✅ Custom margin */
+            color: #555; /* ✅ Non-default color */
+        }
+
+        .read-more {
+            display: inline-block; /* ✅ display property */
+            color: #ffffff; /* ✅ color property */
+            background-color: #007BFF; /* ✅ background-color */
+            margin: 20px 0; /* ✅ margin */
+            padding: 10px 20px; /* ✅ padding */
+            border-radius: 5px; /* ✅ border-radius */
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+
+        .read-more:hover {
+            background-color: #0056b3; /* ✅ hover effect */
+            transform: scale(1.05); /* ✅ zoom on hover */
+        }
+    </style>
+</head>
+<body>
+    <div class="blog-post-card">
+        <img class="post-img" 
+             src="https://i.pinimg.com/736x/7e/a8/b9/7ea8b985b6938680d0466040bef7b557.jpg"  
+             alt="futuristic pc">
+        
+        <div class="post-content">
+            <h2 class="post-title">Futuristic PC Build</h2>
+            <p class="post-excerpt">Coding is the future.</p>
+            <a href="#" class="read-more">Read More</a>
+        </div>
+    </div>
+</body>
+</html>
+
+** end of index.html **
+
+** start of styles.css **
+
+
+
+** end of styles.css **
+

@@ -1,0 +1,62 @@
+** start of index.html **
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Build an Event Flyer Page</title>
+  <style>
+    body {
+      padding: 50px 0;
+      margin: 0 auto;
+      width: 80vw;
+      min-height: calc(100vh - 100px);
+    }
+    hr {
+      width: 90%;
+      margin: 20px auto;
+    }
+    section {
+      width: 85%;
+      margin: 0 auto 30px;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    img {
+      max-width: 200px;
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="https://i.pinimg.com/736x/48/93/1c/48931c5e0c98afa8b46283d4987ed90c.jpg" alt="Eid Festival Logo">
+    <h1>Eid Festival Celebration</h1>
+    <hr>
+  </header>
+  <main>
+    <section>
+      <h2>Halal Parties</h2>
+      <p>Enjoy our delicious halal food options throughout the festival.</p>
+      <hr>
+    </section>
+    <section>
+      <h2>Festival Highlights</h2>
+      <p>Cultural performances, bazaar, and family activities all day long.</p>
+      <hr>
+    </section>
+  </main>
+</body>
+</html>
+
+** end of index.html **
+
+** start of styles.css **
+
+
+
+** end of styles.css **
+

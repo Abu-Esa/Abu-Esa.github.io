@@ -1,0 +1,107 @@
+** start of index.html **
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Earth-Moon Orbit</title>
+    <style>
+        /* Body styling to center all content on the page using Flexbox */
+        body {
+            height: 100vh; /* Set height to 100% of the viewport height */
+            margin: 0;
+            display: flex; /* Use Flexbox */
+            justify-content: center; /* Center horizontally */
+            align-items: center; /* Center vertically */
+            background-color: #000022; /* Dark background for space */
+            overflow: hidden; /* Hide scrollbars if any */
+            font-family: 'Inter', sans-serif;
+        }
+
+        /* Keyframes for the orbit animation */
+        @keyframes orbit {
+            from {
+                transform: rotate(0deg) translate(-50%, -50%); /* Initial state: no rotation, maintain centering */
+            }
+            to {
+                transform: rotate(360deg) translate(-50%, -50%); /* Final state: rotate 360 degrees, maintain centering */
+            }
+        }
+
+        /* .space element: The container for the Earth and Orbit */
+        .space {
+            width: 200px;
+            height: 200px;
+            position: relative; /* Essential for absolute positioning of children */
+            /* This div is centered by the body's flexbox properties */
+        }
+
+        /* .earth element: The central "planet" */
+        .earth {
+            width: 100px;
+            height: 100px;
+            background-color: #007bff; /* Blue for Earth */
+            border-radius: 50%; /* Make it circular */
+            position: absolute; /* Position relative to .space */
+            top: 50%; /* Place top edge at 50% of parent's height */
+            left: 50%; /* Place left edge at 50% of parent's width */
+            transform: translate(-50%, -50%); /* Shift back by half its own size to perfectly center */
+            box-shadow: 0 0 15px rgba(0, 123, 255, 0.7); /* Glow effect */
+        }
+
+        /* .orbit element: The path for the moon */
+        .orbit {
+            width: 200px; /* Same size as .space to define the full orbit path */
+            height: 200px;
+            border: 1px dashed rgba(255, 255, 255, 0.3); /* Dashed white border for orbit path */
+            border-radius: 50%; /* Make it circular */
+            position: absolute; /* Position relative to .space */
+            /* Position the orbit element so its bottom-right corner is at the center of .space */
+            /* This is achieved by setting top/left to 0 and then translating by -50% of its own size */
+            /* Because .orbit is 200x200, translate(-50%, -50%) moves it -100px in x and y */
+            /* So, its top-left becomes (-100, -100) relative to .space's top-left */
+            /* This makes its bottom-right ( -100+200, -100+200 ) = (100,100), which is the center of .space */
+            top: 0;
+            left: 0;
+            transform: translate(-50%, -50%); /* Shift by half its own width/height */
+
+            /* Apply the orbit animation */
+            animation: orbit 5s linear infinite; /* 5 seconds, linear speed, infinite loop */
+        }
+
+        /* .moon element: The orbiting "planet" */
+        .moon {
+            width: 30px;
+            height: 30px;
+            background-color: #cccccc; /* Gray for Moon */
+            border-radius: 50%; /* Make it circular */
+            position: absolute; /* Position relative to .orbit */
+            top: 0; /* Position at the top edge of .orbit */
+            left: 50%; /* Place left edge at 50% of parent's width */
+            transform: translateX(-50%); /* Shift back by half its own width to center horizontally */
+            box-shadow: 0 0 8px rgba(255, 255, 255, 0.5); /* Subtle glow */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="space">
+        <div class="earth"></div>
+        <div class="orbit">
+            <div class="moon"></div>
+        </div>
+    </div>
+
+</body>
+</html>
+
+
+** end of index.html **
+
+** start of styles.css **
+
+
+
+** end of styles.css **
+

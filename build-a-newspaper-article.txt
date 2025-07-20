@@ -1,0 +1,85 @@
+** start of index.html **
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Newspaper Article</title>
+    <style>
+      /* 1. html selector font-size 24px */
+      html {
+        font-size: 24px;
+      }
+
+      /* 3,4. .newspaper font-size 16px and font-family 'Open Sans', sans-serif */
+      .newspaper {
+        font-size: 16px;
+        font-family: 'Open Sans', sans-serif;
+      }
+
+      /* 17,18,19 .name font-size 2rem, font-family Times New Roman, uppercase */
+      .name {
+        font-size: 2rem;
+        font-family: 'Times New Roman', serif;
+        text-transform: uppercase;
+      }
+
+      /* 21,22 .headline font-size 2em, font-weight bold */
+      .headline {
+        font-size: 2em;
+        font-weight: bold;
+      }
+
+      /* 23,24,25 .sub-headline font-weight 100, font-size 1.5em, font-style italic */
+      .sub-headline {
+        font-weight: 100;
+        font-size: 1.5em;
+        font-style: italic;
+      }
+
+      /* 26 .author font-weight bold and uppercase */
+      .author {
+        font-weight: bold;
+        text-transform: uppercase;
+      }
+
+      /* 27,28 .text text-indent 20px, line-height 2em */
+      .text {
+        text-indent: 20px;
+        line-height: 2em;
+      }
+
+      /* 29,30 .text::first-letter font-weight bold and font-size 2em */
+      .text::first-letter {
+        font-weight: bold;
+        font-size: 2em;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="newspaper">
+      <div class="name">The Daily Chronicle</div>
+      <div class="date">July 8, 2025</div>
+      <div class="headline">Local Community Rallies for Green Spaces</div>
+      <div class="sub-headline">Citizens unite to plant 1,000 trees in city parks</div>
+      <div class="author">By Abu-Esa</div>
+      <p class="text">
+        The residents of the city have come together in an unprecedented show of support for urban greenery. Over the past month, volunteers have been planting trees and shrubs in several neighborhoods.
+      </p>
+      <p class="text">
+        This initiative aims to improve air quality and provide more recreational areas for families. Organizers hope this movement will inspire other cities to prioritize green spaces for healthier urban living.
+      </p>
+    </div>
+  </body>
+</html>
+
+
+** end of index.html **
+
+** start of styles.css **
+
+
+
+** end of styles.css **
+

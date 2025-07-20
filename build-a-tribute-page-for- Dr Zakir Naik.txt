@@ -1,0 +1,92 @@
+** start of index.html **
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Tribute to Dr. Zakir Naik</title>
+  <style>
+    #image {
+      display: block;
+      max-width: 100%;
+      height: auto;
+      margin: 0 auto;
+    }
+    #main {
+      max-width: 700px;
+      margin: 0 auto;
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      line-height: 1.6;
+      text-align: center;
+    }
+    #tribute-info {
+      text-align: left;
+      margin-top: 20px;
+    }
+    #tribute-link {
+      display: inline-block;
+      margin-top: 20px;
+      text-decoration: none;
+      color: #007BFF;
+      font-weight: bold;
+    }
+    #tribute-link:hover {
+      text-decoration: underline;
+    }
+    ul {
+      margin-left: 20px;
+    }
+  </style>
+</head>
+<body>
+  <main id="main">
+    <h1 id="title">Dr. Zakir Naik</h1>
+
+    <div id="img-div">
+      <img id="image" src="https://dam.mediacorp.sg/image/upload/s--FNrz80Hf--/f_auto,q_auto/c_fill,g_auto,h_622,w_830/v1/tdy-migration/file6xkog8spegw1ejk3s2c2.jpg?itok=cGOm0qNn" alt="Dr. Zakir Naik" />
+      <figcaption id="img-caption">Dr. Zakir Naik delivering a lecture</figcaption>
+    </div>
+
+    <div id="tribute-info">
+      <p>
+        Dr. Zakir Naik is a renowned Islamic preacher, public speaker, and comparative religion scholar. 
+        He is famous for his deep knowledge of Islam and other religions, his ability to reference religious texts, 
+        and his engaging style of presenting complex ideas.
+      </p>
+      
+      <h3>Notable Achievements:</h3>
+      <ul>
+        <li>Founded the Islamic Research Foundation (IRF) in 1991 to promote Islamic education and interfaith dialogue.</li>
+        <li>Delivered over 2000 lectures and debates worldwide on comparative religion, focusing on peace and coexistence.</li>
+        <li>Hosted the popular TV program "Peace TV," which broadcasts Islamic content in multiple languages to a global audience.</li>
+        <li>Known for promoting the scientific miracles in the Quran, bridging science and faith in his lectures.</li>
+        <li>Authored several books and articles that focus on Islamic teachings and the comparative study of religions.</li>
+        <li>Received the King Faisal Award for Service to Islam in 2015 (though the award was later returned).</li>
+        <li>Engaged in various humanitarian activities, including charity work and relief programs for the needy.</li>
+        <li>Has a significant YouTube presence with millions of followers, where he addresses questions on religion, science, and philosophy.</li>
+      </ul>
+      
+      <p>
+        Dr. Zakir Naik continues to inspire many through his lectures and debates, encouraging people to learn about different faiths with an open mind.
+      </p>
+    </div>
+
+    <div>
+      <a id="tribute-link" href="https://en.wikipedia.org/wiki/Zakir_Naik" target="_blank" rel="noopener noreferrer">
+        Learn more about Dr. Zakir Naik
+      </a>
+    </div>
+  </main>
+</body>
+</html>
+
+
+** end of index.html **
+
+** start of styles.css **
+
+
+
+** end of styles.css **
+

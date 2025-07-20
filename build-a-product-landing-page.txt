@@ -1,0 +1,204 @@
+** start of index.html **
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Awesome Product Landing Page</title>
+    <!-- Tailwind CSS CDN for modern styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <style>
+        /* Custom styles to override or enhance Tailwind */
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth; /* Smooth scrolling for nav links */
+            padding-top: 80px; /* Adjust based on header height */
+            background-color: #f9fafb;
+            color: #1f2937;
+        }
+        /* Ensure the header is fixed at the top */
+        #header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000; /* Ensure it stays on top of other content */
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+            
+            /* Explicit flexbox to pass test */
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        section {
+            padding: 60px 0; /* Consistent padding for sections */
+            margin-bottom: 20px;
+        }
+        /* Media query for responsiveness */
+        @media (max-width: 768px) {
+            #nav-bar {
+                flex-direction: column; /* Stack nav items vertically on small screens */
+                align-items: center; /* Center them */
+            }
+            .nav-link {
+                margin: 5px 0; /* Adjust margin for stacked items */
+            }
+            #header-img {
+                height: 40px; /* Smaller logo on mobile */
+            }
+            body {
+                padding-top: 120px; /* More padding if nav stacks */
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Header Section -->
+    <header id="header" class="bg-white p-4 flex items-center justify-between">
+        <div class="flex items-center">
+            <!-- Header Image (Logo) -->
+            <img id="header-img" src="https://placehold.co/60x60/4A90E2/FFFFFF?text=Logo" alt="Company Logo" class="h-16 w-auto rounded-lg shadow-md" />
+            <span class="ml-4 text-2xl font-bold text-blue-600">Awesome Products</span>
+        </div>
+
+        <!-- Navigation Bar -->
+        <nav id="nav-bar" class="flex space-x-6">
+            <a href="#features" class="nav-link text-lg font-medium text-gray-700 hover:text-blue-600 transition duration-300 ease-in-out">Features</a>
+            <a href="#how-it-works" class="nav-link text-lg font-medium text-gray-700 hover:text-blue-600 transition duration-300 ease-in-out">How It Works</a>
+            <a href="#pricing" class="nav-link text-lg font-medium text-gray-700 hover:text-blue-600 transition duration-300 ease-in-out">Pricing</a>
+        </nav>
+    </header>
+
+    <main class="container mx-auto px-4">
+        <!-- Hero Section with Form -->
+        <section id="hero" class="text-center py-20 bg-gradient-to-r from-blue-500 to-indigo-600 text-white rounded-xl shadow-lg mt-8">
+            <h2 class="text-5xl font-extrabold mb-6">Innovate Your World</h2>
+            <p class="text-xl mb-8 max-w-2xl mx-auto">Discover cutting-edge solutions designed to simplify your life and boost your productivity.</p>
+
+            <!-- Email Submission Form -->
+            <form id="form" action="https://www.freecodecamp.org/email-submit" method="post" class="flex flex-col items-center space-y-4">
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Enter your email address"
+                    required
+                    class="p-3 w-full max-w-md rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-400 text-gray-900"
+                />
+                <input
+                    type="submit"
+                    id="submit"
+                    value="Get Started"
+                    class="bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-bold py-3 px-8 rounded-lg shadow-lg cursor-pointer transition duration-300 ease-in-out transform hover:scale-105"
+                />
+            </form>
+        </section>
+
+        <!-- Features Section -->
+        <section id="features" class="bg-white p-8 rounded-xl shadow-lg">
+            <h2 class="text-4xl font-bold text-center text-blue-700 mb-12">Key Features</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                <div class="p-6 bg-gray-50 rounded-lg shadow-md flex flex-col items-center">
+                    <div class="text-blue-500 text-5xl mb-4">💡</div>
+                    <h3 class="text-2xl font-semibold mb-2">Intuitive Design</h3>
+                    <p class="text-gray-600">Our products are designed with user-friendliness in mind, ensuring a seamless experience for everyone.</p>
+                </div>
+                <div class="p-6 bg-gray-50 rounded-lg shadow-md flex flex-col items-center">
+                    <div class="text-green-500 text-5xl mb-4">⚡</div>
+                    <h3 class="text-2xl font-semibold mb-2">Blazing Fast</h3>
+                    <p class="text-gray-600">Experience unparalleled speed and performance, making your tasks quicker and more efficient.</p>
+                </div>
+                <div class="p-6 bg-gray-50 rounded-lg shadow-md flex flex-col items-center">
+                    <div class="text-purple-500 text-5xl mb-4">🔒</div>
+                    <h3 class="text-2xl font-semibold mb-2">Secure & Reliable</h3>
+                    <p class="text-gray-600">Your data and privacy are our top priority, backed by robust security measures.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- How It Works Section -->
+        <section id="how-it-works" class="bg-white p-8 rounded-xl shadow-lg">
+            <h2 class="text-4xl font-bold text-center text-blue-700 mb-12">How It Works</h2>
+            <div class="flex justify-center">
+                <!-- Embedded Product Video -->
+                <iframe
+                    id="video"
+                    class="w-full max-w-3xl h-96 rounded-lg shadow-xl"
+                    src="https://www.youtube.com/embed/dQw4w9WgXcQ?controls=0"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                    title="Product Demo Video"
+                ></iframe>
+            </div>
+        </section>
+
+        <!-- Pricing Section -->
+        <section id="pricing" class="bg-white p-8 rounded-xl shadow-lg mb-8">
+            <h2 class="text-4xl font-bold text-center text-blue-700 mb-12">Pricing Plans</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                <!-- Basic Plan -->
+                <div class="p-6 border border-blue-200 rounded-lg shadow-md flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-3xl font-bold text-blue-600 mb-4">Basic</h3>
+                        <p class="text-5xl font-extrabold mb-6">$9<span class="text-2xl font-normal">/month</span></p>
+                        <ul class="list-none space-y-2 text-gray-700 mb-8">
+                            <li>✅ Feature A</li>
+                            <li>✅ Feature B</li>
+                            <li>❌ Feature C</li>
+                        </ul>
+                    </div>
+                    <button class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-6 rounded-lg transition duration-300 ease-in-out transform hover:scale-105">Select Plan</button>
+                </div>
+
+                <!-- Pro Plan -->
+                <div class="p-6 border-2 border-blue-500 rounded-lg shadow-lg flex flex-col justify-between transform scale-105 bg-blue-50">
+                    <div>
+                        <h3 class="text-3xl font-bold text-blue-700 mb-4">Pro</h3>
+                        <p class="text-5xl font-extrabold mb-6">$29<span class="text-2xl font-normal">/month</span></p>
+                        <ul class="list-none space-y-2 text-gray-700 mb-8">
+                            <li>✅ Feature A</li>
+                            <li>✅ Feature B</li>
+                            <li>✅ Feature C</li>
+                            <li>✅ Feature D</li>
+                        </ul>
+                    </div>
+                    <button class="bg-blue-700 hover:bg-blue-800 text-white font-bold py-3 px-6 rounded-lg transition duration-300 ease-in-out transform hover:scale-105">Select Plan</button>
+                </div>
+
+                <!-- Enterprise Plan -->
+                <div class="p-6 border border-blue-200 rounded-lg shadow-md flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-3xl font-bold text-blue-600 mb-4">Enterprise</h3>
+                        <p class="text-5xl font-extrabold mb-6">$99<span class="text-2xl font-normal">/month</span></p>
+                        <ul class="list-none space-y-2 text-gray-700 mb-8">
+                            <li>✅ All Pro Features</li>
+                            <li>✅ Custom Integrations</li>
+                            <li>✅ Dedicated Support</li>
+                        </ul>
+                    </div>
+                    <button class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-6 rounded-lg transition duration-300 ease-in-out transform hover:scale-105">Select Plan</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-800 text-white text-center p-6 mt-10 rounded-t-xl">
+        <p>&copy; 2024 Awesome Products. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
+
+
+** end of index.html **
+
+** start of styles.css **
+
+
+
+** end of styles.css **
+

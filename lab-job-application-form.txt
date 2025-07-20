@@ -1,0 +1,96 @@
+** start of index.html **
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Job Application Form</title>
+  <style>
+    /* 10. Focus style for input and textarea */
+    input:focus, textarea:focus {
+      border-color: blue;
+      outline: none;
+    }
+
+    /* 11. Invalid state: input, select, textarea */
+    input:invalid, select:invalid, textarea:invalid {
+      border-color: red;
+    }
+
+    /* 12. Valid state: input, select, textarea */
+    input:valid, select:valid, textarea:valid {
+      border-color: green;
+    }
+
+    /* 13. Button hover background */
+    button:hover {
+      background-color: #007BFF; /* Blue background on hover */
+      color: white; /* Optional: text color change */
+      cursor: pointer;
+    }
+
+    /* 14,15,16. Radio checked styles: border, background, box-shadow */
+    .radio-group input[type="radio"]:checked {
+      border: 2px solid #007BFF;
+      background-color: #cce4ff;
+      box-shadow: 0 0 5px rgba(0, 123, 255, 0.6);
+      outline: none; /* Remove default outline */
+    }
+
+    /* 17. Change label text color when radio checked */
+    .radio-group input[type="radio"]:checked + label {
+      color: #007BFF;
+      font-weight: bold;
+    }
+
+    /* 18. Style first input differently */
+    input:first-of-type {
+      border: 2px solid orange;
+      padding: 6px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <form>
+    <input type="text" id="name" placeholder="Your Name" required>
+    <input type="email" id="email" placeholder="Your Email" required>
+    
+    <select id="position" required>
+      <option value="">Select Position</option>
+      <option value="developer">Developer</option>
+      <option value="designer">Designer</option>
+      <option value="manager">Manager</option>
+    </select>
+
+    <fieldset class="radio-group">
+      <!-- Add labels AFTER inputs for CSS sibling selector to work -->
+      <input type="radio" name="availability" id="avail-full" required>
+      <label for="avail-full">Full-time</label>
+      
+      <input type="radio" name="availability" id="avail-part">
+      <label for="avail-part">Part-time</label>
+      
+      <input type="radio" name="availability" id="avail-freelance">
+      <label for="avail-freelance">Freelance</label>
+    </fieldset>
+    
+    <textarea id="message" required></textarea>
+    <button type="submit">Submit</button>
+  </form>
+</div>
+
+</body>
+</html>
+
+
+** end of index.html **
+
+** start of styles.css **
+
+
+
+** end of styles.css **
+

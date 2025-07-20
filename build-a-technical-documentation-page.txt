@@ -1,0 +1,155 @@
+** start of index.html **
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Technical Documentation Page</title>
+  <style>
+    /* Simple styles for layout */
+    body {
+      margin: 0;
+      display: flex;
+      font-family: Arial, sans-serif;
+    }
+    #navbar {
+      position: fixed;
+      left: 0;
+      top: 0;
+      width: 220px;
+      height: 100vh;
+      overflow-y: auto;
+      background-color: #f4f4f4;
+      padding: 1em;
+      box-sizing: border-box;
+    }
+    #navbar header {
+      font-size: 1.5em;
+      margin-bottom: 1em;
+    }
+    #navbar a.nav-link {
+      display: block;
+      margin: 0.5em 0;
+      color: #333;
+      text-decoration: none;
+    }
+    #navbar a.nav-link:hover {
+      text-decoration: underline;
+    }
+    main#main-doc {
+      margin-left: 240px;
+      padding: 1em;
+      max-width: 800px;
+    }
+    section.main-section header {
+      font-size: 1.4em;
+      margin-bottom: 0.5em;
+    }
+    code {
+      background-color: #eee;
+      padding: 0.2em 0.4em;
+      border-radius: 3px;
+      font-family: monospace;
+    }
+    /* Media query for smaller screens */
+    @media (max-width: 600px) {
+      body {
+        flex-direction: column;
+      }
+      #navbar {
+        position: relative;
+        width: 100%;
+        height: auto;
+      }
+      main#main-doc {
+        margin-left: 0;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <nav id="navbar">
+    <header>Documentation</header>
+    <a class="nav-link" href="#Introduction_to_HTML">Introduction to HTML</a>
+    <a class="nav-link" href="#Basic_Syntax">Basic Syntax</a>
+    <a class="nav-link" href="#Elements_and_Tags">Elements and Tags</a>
+    <a class="nav-link" href="#Attributes">Attributes</a>
+    <a class="nav-link" href="#Forms_and_Inputs">Forms and Inputs</a>
+  </nav>
+
+  <main id="main-doc">
+    <section class="main-section" id="Introduction_to_HTML">
+      <header>Introduction to HTML</header>
+      <p>HTML stands for HyperText Markup Language.</p>
+      <p>It is the standard markup language for creating web pages.</p>
+      <p>HTML elements are represented by tags such as <code>&lt;html&gt;</code> and <code>&lt;body&gt;</code>.</p>
+      <ul>
+        <li>HTML documents start with <code>&lt;!DOCTYPE html&gt;</code>.</li>
+        <li>The root element is <code>&lt;html&gt;</code>.</li>
+      </ul>
+      <code>&lt;html&gt; ... &lt;/html&gt;</code>
+    </section>
+
+    <section class="main-section" id="Basic_Syntax">
+      <header>Basic Syntax</header>
+      <p>HTML syntax consists of elements enclosed in angle brackets.</p>
+      <p>Tags come in pairs: an opening tag and a closing tag.</p>
+      <p>Example of a paragraph element:</p>
+      <code>&lt;p&gt;This is a paragraph.&lt;/p&gt;</code>
+      <ul>
+        <li>Tags are case-insensitive.</li>
+        <li>Whitespace is generally ignored by browsers.</li>
+      </ul>
+      <code>&lt;h1&gt;Heading&lt;/h1&gt;</code>
+    </section>
+
+    <section class="main-section" id="Elements_and_Tags">
+      <header>Elements and Tags</header>
+      <p>Elements are the building blocks of HTML.</p>
+      <p>Tags mark the start and end of elements.</p>
+      <p>Some tags are self-closing, like <code>&lt;br/&gt;</code>.</p>
+      <ul>
+        <li>Common tags: <code>&lt;div&gt;</code>, <code>&lt;span&gt;</code>, <code>&lt;a&gt;</code></li>
+        <li>Elements can be nested inside each other.</li>
+      </ul>
+      <code>&lt;div&gt;Content&lt;/div&gt;</code>
+    </section>
+
+    <section class="main-section" id="Attributes">
+      <header>Attributes</header>
+      <p>Attributes provide additional information about elements.</p>
+      <p>They are placed inside the opening tag.</p>
+      <p>Example: the <code>href</code> attribute in anchor tags.</p>
+      <ul>
+        <li>Attributes have name and value pairs.</li>
+        <li>Values are usually enclosed in quotes.</li>
+      </ul>
+      <code>&lt;a href="https://example.com"&gt;Link&lt;/a&gt;</code>
+    </section>
+
+    <section class="main-section" id="Forms_and_Inputs">
+      <header>Forms and Inputs</header>
+      <p>Forms collect user input.</p>
+      <p>Input elements include text boxes, checkboxes, and buttons.</p>
+      <p>The <code>&lt;form&gt;</code> element wraps inputs.</p>
+      <ul>
+        <li>Form uses method and action attributes.</li>
+        <li>Input types include <code>text</code>, <code>email</code>, and <code>submit</code>.</li>
+      </ul>
+      <code>&lt;input type="text" name="username"&gt;</code>
+    </section>
+  </main>
+</body>
+</html>
+
+
+** end of index.html **
+
+** start of styles.css **
+
+
+
+** end of styles.css **
+
